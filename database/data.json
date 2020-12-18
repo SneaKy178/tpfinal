@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "name": "Spellbreak",
+      "price": "80",
+      "type": "FPS",
+      "rating": "Adults only 18+",
+      "id": 2
+    },
+    {
+      "name": "Rocket league",
+      "price": "0",
+      "type": "TPS",
+      "rating": "Everyone",
+      "id": 3
+    }
+  ]
+}

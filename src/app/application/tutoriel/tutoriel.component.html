@@ -1,0 +1,104 @@
+<ng-container [ngSwitch]="idTutoriel">
+<ng-container *ngSwitchCase="1">
+    <div class="pt-1 mb-1 container">
+        <div class="row">
+        <div class="card col align-self-center bg-dark">
+            <img class="card-img-top center" [src]="['assets/images/angular.png']" alt="Card image cap" style="height: 300px; width: 400px;">
+            <div class="card-body">
+                <p class="text-center text-info">Appuyer sur l'image pour en apprendre plus.</p>
+              <h5 class="card-title text-center text-info">Angular</h5>
+              <p class="card-text text-center text-info">Angular est un framework souvent utilisé pour créer des "Single Page Application".</p>
+            </div>
+          </div>
+          </div>
+    </div>
+</ng-container>
+<ng-container *ngSwitchCase="2">
+    <h2 class="text-center pt-5">Voici ce que C.R.U.D siginifie</h2>
+    <div class="pt-5 container">
+        <div class="row">
+            
+        <table class="table table-dark col align-self-center" style="width: 40rem;">
+            <thead>
+              <tr>
+                <th scope="col">Lettres</th>
+                <th scope="col">Définition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">C</th>
+                <td>"Create" Créer/ajouter de nouvelles données.</td>
+              </tr>
+              <tr>
+                <th scope="row">R</th>
+                <td>"Read/Retrieve" lire/récupéer les données. </td>
+              </tr>
+              <tr>
+                <th scope="row">U</th>
+                <td>"Update" Mettre à jours les données</td>
+              </tr>
+              <tr>
+                <th scope="row">D</th>
+                <td>"Delete" Effacer les données</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+    </div>
+</ng-container>
+<ng-container *ngSwitchCase="3">
+    <div>
+        <h2 class="text-center pt-5">Voici les relations uml et ce qu'elles signifient</h2>
+        <div class="pt-5">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Formes</th>
+                    <th scope="col">Définition</th>
+                    <th scope="col">Code Typescript</th>
+                    <th scope="col">Remarques</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">A -----> B</th>
+                    <td>Héritage</td>
+                    <td>class A extends B</td>
+                    <td>B est la classe Parent</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">A -----⊳ B</th>
+                    <td>Implémentation</td>
+                    <td>class A implements B</td>
+                    <td>B est une interface</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">A ----- B</th>
+                    <td>Association</td>
+                    <td>class A utilise B ou l'inverse</td>
+                    <td>Il y a 3 types d'associations</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">A -----◆(noir) B</th>
+                    <td>Composition</td>
+                    <td>class A est un attribut de class B et doit être instancié dans tout constructeur de B</td>
+                    <td>Aucune remarque</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">A -----◆ B</th>
+                    <td>Agrégation</td>
+                    <td>class A est un attribut de class B et il n'y a pas besoin de l'instancier dans tout constructeur de B</td>
+                    <td>Aucune remarque</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngSwitchDefault>
+    <div>
+       
+    </div>
+</ng-container>
+</ng-container>

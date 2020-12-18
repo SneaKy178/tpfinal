@@ -1,0 +1,45 @@
+<div class="container">
+    <h2 class="pt-5">Jeux vidéos</h2>
+    <form [formGroup]="jeuxVideosForm" (ngSubmit)= "onSubmit()">
+
+  
+      <div class="form-group">
+        <label for="name"  class="text-dark">Name</label>
+        <input id="name"  formControlName="name" class="form-control bg-dark text-info" />
+
+      </div>
+      
+
+  
+      <div class="form-group">
+        <label for="price"  class="text-dark">Price</label>
+        <input  id="price" formControlName="price" class="form-control bg-dark text-info" />
+      </div>
+
+      <div class="form-group">
+        <label for="type" class="text-dark">Type</label>
+        <select class="form-control bg-dark text-info" id="type" formControlName="type">
+          <option>FPS</option>
+          <option>TPS</option>
+          <option>MMO/RPG</option>
+          <option>Battle Royal</option>
+          <option>Mobile</option>
+        </select>
+      </div>    
+  
+      <div class="form-group">
+        <label for="rating"  class="text-dark">Rating</label>
+        <select class="form-control bg-dark text-info" id="rating" formControlName="rating">
+          <option>Everyone</option>
+          <option>Everyone 10+</option>
+          <option>Teen</option>
+          <option>Mature 17+</option>
+          <option>Adults only 18+</option>
+        </select>
+      </div>    
+  
+      <button class="btn btn-dark text-info" >Send</button>
+    </form>
+  </div>
+  
+  

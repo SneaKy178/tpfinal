@@ -1,0 +1,12 @@
+ul li{
+  display: inline;
+}
+
+i, h3{
+  display: inline;
+  text-align: center;
+}
+
+.card {
+  width: 500px;
+}
